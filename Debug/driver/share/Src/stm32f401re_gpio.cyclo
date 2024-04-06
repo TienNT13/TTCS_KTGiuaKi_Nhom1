@@ -1,0 +1,13 @@
+../driver/share/Src/stm32f401re_gpio.c:55:6:GPIO_Init	5
+../driver/share/Src/stm32f401re_gpio.c:95:6:GPIO_StructInit	1
+../driver/share/Src/stm32f401re_gpio.c:118:6:GPIO_PinLockConfig	1
+../driver/share/Src/stm32f401re_gpio.c:161:9:GPIO_ReadInputDataBit	2
+../driver/share/Src/stm32f401re_gpio.c:183:10:GPIO_ReadInputData	1
+../driver/share/Src/stm32f401re_gpio.c:198:9:GPIO_ReadOutputDataBit	2
+../driver/share/Src/stm32f401re_gpio.c:220:10:GPIO_ReadOutputData	1
+../driver/share/Src/stm32f401re_gpio.c:237:6:GPIO_SetBits	1
+../driver/share/Src/stm32f401re_gpio.c:254:6:GPIO_ResetBits	1
+../driver/share/Src/stm32f401re_gpio.c:272:6:GPIO_WriteBit	2
+../driver/share/Src/stm32f401re_gpio.c:292:6:GPIO_Write	1
+../driver/share/Src/stm32f401re_gpio.c:305:6:GPIO_ToggleBits	1
+../driver/share/Src/stm32f401re_gpio.c:385:6:GPIO_PinAFConfig	1
