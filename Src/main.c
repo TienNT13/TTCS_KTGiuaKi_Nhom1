@@ -669,11 +669,11 @@ int main (void){
 
 	AppCommon();
 
-	uint8_t nut_nhan1 ;
+	//uint8_t nut_nhan1 ;
 	uint8_t nut_nhan2 ;
 	uint8_t nut_nhan3 ;
 	uint8_t nut_nhan4 ;
-	uint8_t nut_nhan5 ;
+	//uint8_t nut_nhan5 ;
 
 	Ledboard_init();
 	Ledred1_init();
@@ -705,6 +705,7 @@ int main (void){
 
 		// nut nhan 1 dieu khien ledred 1,2 , coi keu nhay 2 lan
 		nut_nhan2 = ButtonRead_Status(BUTTON2_GPIO_PORT, BUTTON2_GPIO_PIN);
+		LedControl_SetStatus(LEDBOARD_GPIO_PORT, LEDBOARD_GPIO_PIN, GPIO_PIN_LOW);
 
 		if ( nut_nhan2 == 0) {
 			for(int i = 0; i < 2; i++){
@@ -718,7 +719,7 @@ int main (void){
 				coiControlSetStatus(COI_GPIO_PORT, COI_GPIO_PIN, GPIO_PIN_LOW);
 				LedControl_SetStatus(LEDRED1_GPIO_PORT, LEDRED1_GPIO_PIN, GPIO_PIN_LOW);
 				LedControl_SetStatus(LEDRED2_GPIO_PORT, LEDRED2_GPIO_PIN, GPIO_PIN_LOW);
-				delay(1000);
+//				delay(1000);
 			}
 		}
 
@@ -763,11 +764,15 @@ int main (void){
 			}
 
 			if(ok == 1){
+				LedControl_SetStatus(LEDBLUE1_GPIO_PORT, LEDBLUE1_GPIO_PIN, GPIO_PIN_HIGH);
 				LedControl_SetStatus(LEDBLUE2_GPIO_PORT, LEDBLUE2_GPIO_PIN, GPIO_PIN_HIGH);
+
 				delay_ms(500);
 			}
 			if(ok == 0){
+				LedControl_SetStatus(LEDBLUE1_GPIO_PORT, LEDBLUE1_GPIO_PIN, GPIO_PIN_LOW);
 				LedControl_SetStatus(LEDBLUE2_GPIO_PORT, LEDBLUE2_GPIO_PIN, GPIO_PIN_LOW);
+
 				delay_ms(500);
 			}
 	}
@@ -802,6 +807,11 @@ void I2C_address_direction(uint8_t address, uint8_t direction) // truyen bit dia
 	// Wait for I2C EV6
 	// It means that a slave acknowledges his address
 	if (direction == I2C_Direction_Transmitter)		// truyền
+
+
+
+
+
 	{
 		while (!I2C_CheckEvent(I2Cx_SENSOR, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
 	}
@@ -987,7 +997,7 @@ void processGetValueSensor(void) { // xu li du lieu nhiet do va do am sau 1s và
 		 || ((humidity1 > humidity ) && (humidity1 - humidity >= 2))
 		 || ((humidity1 < humidity ) && (humidity1 - humidity <= 2)))
 		{
-			ucg_DrawString(&ucg, 0, 32, 0, "Nhom 1 ");
+			ucg_DrawString(&ucg,0 , 32, 0, "Nhom 1 ");
 			memset(src1, 0, sizeof(src1));
 			sprintf(src1, " Temp = %d oC  ", temperature1);
 			ucg_DrawString(&ucg, 0, 52, 0, src1);
@@ -995,6 +1005,10 @@ void processGetValueSensor(void) { // xu li du lieu nhiet do va do am sau 1s và
 			memset(src2, 0, sizeof(src2));
 			sprintf(src2, " Humi = %3d %%   ", humidity1);
 			ucg_DrawString(&ucg, 0, 72, 0, src2);
+
+			memset(src5, 0, sizeof(src5));
+			sprintf(src5, " Light = %d lux  ", Kanman_light);
+			ucg_DrawString(&ucg, 0, 92, 0, src5);
 		}
 
 		time_total = 0;
@@ -1021,6 +1035,10 @@ void Scan_SensorLCD(void)
 	memset(src4, 0, sizeof(src4));
 	sprintf(src4, " Humi = %3d %%   ", humidity);
 	ucg_DrawString(&ucg, 0, 72, 0, src4);
+
+	memset(src5, 0, sizeof(src5));
+	sprintf(src5, " Light = %d lux  ", Kanman_light);
+	ucg_DrawString(&ucg, 0, 92, 0, src5);
 }
 /**
 * @func 	Scan_1s
@@ -1338,7 +1356,7 @@ static void ABL_Process(void)
 
 		LedControl_TimerOCSetPwm(Kanman_light);
 
-		ucg_DrawString(&ucg, 0, 32, 0, "Nhom 1");
+		ucg_DrawString(&ucg,0 , 32,0 , "Nhom 1");
 		memset(src3, 0, sizeof(src3));
 		sprintf(src3, " Temp = %d oC  ", temperature);
 		ucg_DrawString(&ucg, 0, 52, 0, src3);

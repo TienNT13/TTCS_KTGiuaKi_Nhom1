@@ -194,6 +194,7 @@ Discarded input sections
                 0x00000000        0x4 ./Src/main.o
  .bss._kalman_gain
                 0x00000000        0x4 ./Src/main.o
+ .text.delay    0x00000000       0x2c ./Src/main.o
  .group         0x00000000        0xc ./Src/syscalls.o
  .group         0x00000000        0xc ./Src/syscalls.o
  .group         0x00000000        0xc ./Src/syscalls.o
@@ -3215,7 +3216,7 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x08000000                g_pfnVectors
                 0x08000194                        . = ALIGN (0x4)
 
-.text           0x080001a0     0x5eec
+.text           0x080001a0     0x5f44
                 0x080001a0                        . = ALIGN (0x4)
  *(.text)
  .text          0x080001a0       0x40 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -3276,676 +3277,673 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x08000bf4       0x34 ./Src/main.o
  .text.ButtonRead_Status
                 0x08000c28       0x34 ./Src/main.o
- .text.delay    0x08000c5c       0x2c ./Src/main.o
-                0x08000c5c                delay
- .text.main     0x08000c88      0x1bc ./Src/main.o
-                0x08000c88                main
+ .text.main     0x08000c5c      0x1d4 ./Src/main.o
+                0x08000c5c                main
  .text.I2C_start
-                0x08000e44       0x3c ./Src/main.o
-                0x08000e44                I2C_start
+                0x08000e30       0x3c ./Src/main.o
+                0x08000e30                I2C_start
  .text.I2C_address_direction
-                0x08000e80       0x60 ./Src/main.o
-                0x08000e80                I2C_address_direction
+                0x08000e6c       0x60 ./Src/main.o
+                0x08000e6c                I2C_address_direction
  .text.I2C_transmit
-                0x08000ee0       0x38 ./Src/main.o
-                0x08000ee0                I2C_transmit
+                0x08000ecc       0x38 ./Src/main.o
+                0x08000ecc                I2C_transmit
  .text.I2C_stop
-                0x08000f18       0x14 ./Src/main.o
-                0x08000f18                I2C_stop
+                0x08000f04       0x14 ./Src/main.o
+                0x08000f04                I2C_stop
  .text.I2C_receive_nack
-                0x08000f2c       0x30 ./Src/main.o
-                0x08000f2c                I2C_receive_nack
+                0x08000f18       0x30 ./Src/main.o
+                0x08000f18                I2C_receive_nack
  .text.I2C_receive_ack
-                0x08000f5c       0x30 ./Src/main.o
-                0x08000f5c                I2C_receive_ack
+                0x08000f48       0x30 ./Src/main.o
+                0x08000f48                I2C_receive_ack
  .text.TemHumSensor_readRegister
-                0x08000f8c       0xba ./Src/main.o
- *fill*         0x08001046        0x2 
+                0x08000f78       0xba ./Src/main.o
+ *fill*         0x08001032        0x2 
  .text.GetTemp_Sensor
-                0x08001048       0x64 ./Src/main.o
-                0x08001048                GetTemp_Sensor
+                0x08001034       0x64 ./Src/main.o
+                0x08001034                GetTemp_Sensor
  .text.GetHumi_Sensor
-                0x080010ac       0x64 ./Src/main.o
-                0x080010ac                GetHumi_Sensor
+                0x08001098       0x64 ./Src/main.o
+                0x08001098                GetHumi_Sensor
  .text.processGetValueSensor
-                0x08001110      0x1a4 ./Src/main.o
-                0x08001110                processGetValueSensor
+                0x080010fc      0x1dc ./Src/main.o
+                0x080010fc                processGetValueSensor
  .text.Scan_SensorLCD
-                0x080012b4       0x8c ./Src/main.o
-                0x080012b4                Scan_SensorLCD
+                0x080012d8       0xc0 ./Src/main.o
+                0x080012d8                Scan_SensorLCD
  .text.Scan_TimeSensor
-                0x08001340       0x48 ./Src/main.o
-                0x08001340                Scan_TimeSensor
+                0x08001398       0x48 ./Src/main.o
+                0x08001398                Scan_TimeSensor
  .text.delay_ms
-                0x08001388       0x30 ./Src/main.o
-                0x08001388                delay_ms
+                0x080013e0       0x30 ./Src/main.o
+                0x080013e0                delay_ms
  .text.CalculatorTime
-                0x080013b8       0x34 ./Src/main.o
-                0x080013b8                CalculatorTime
+                0x08001410       0x34 ./Src/main.o
+                0x08001410                CalculatorTime
  .text.AppCommon
-                0x080013ec       0x98 ./Src/main.o
+                0x08001444       0x98 ./Src/main.o
  .text.SPI1_Init
-                0x08001484       0x60 ./Src/main.o
+                0x080014dc       0x60 ./Src/main.o
  .text.I2C_Init_temphumi
-                0x080014e4       0x94 ./Src/main.o
+                0x0800153c       0x94 ./Src/main.o
  .text.LightSensor_AdcInit
-                0x08001578       0xb8 ./Src/main.o
+                0x080015d0       0xb8 ./Src/main.o
  .text.LedControl_TimerOCInit
-                0x08001630       0xa4 ./Src/main.o
+                0x08001688       0xa4 ./Src/main.o
  .text.LightSensor_AdcPollingRead
-                0x080016d4       0x38 ./Src/main.o
-                0x080016d4                LightSensor_AdcPollingRead
+                0x0800172c       0x38 ./Src/main.o
+                0x0800172c                LightSensor_AdcPollingRead
  .text.Kanman_Light
-                0x0800170c       0x40 ./Src/main.o
-                0x0800170c                Kanman_Light
+                0x08001764       0x40 ./Src/main.o
+                0x08001764                Kanman_Light
  .text.LedControl_TimerOCSetPwm
-                0x0800174c       0x1c ./Src/main.o
+                0x080017a4       0x1c ./Src/main.o
  .text.ABL_Process
-                0x08001768      0x144 ./Src/main.o
- .text._sbrk    0x080018ac       0x6c ./Src/sysmem.o
-                0x080018ac                _sbrk
+                0x080017c0      0x144 ./Src/main.o
+ .text._sbrk    0x08001904       0x6c ./Src/sysmem.o
+                0x08001904                _sbrk
  .text.Reset_Handler
-                0x08001918       0x50 ./Startup/startup_stm32f401retx.o
-                0x08001918                Reset_Handler
+                0x08001970       0x50 ./Startup/startup_stm32f401retx.o
+                0x08001970                Reset_Handler
  .text.Default_Handler
-                0x08001968        0x2 ./Startup/startup_stm32f401retx.o
-                0x08001968                EXTI2_IRQHandler
-                0x08001968                DebugMon_Handler
-                0x08001968                SPI4_IRQHandler
-                0x08001968                TIM1_CC_IRQHandler
-                0x08001968                HardFault_Handler
-                0x08001968                SDIO_IRQHandler
-                0x08001968                TAMP_STAMP_IRQHandler
-                0x08001968                PendSV_Handler
-                0x08001968                NMI_Handler
-                0x08001968                EXTI3_IRQHandler
-                0x08001968                TIM1_UP_TIM10_IRQHandler
-                0x08001968                I2C3_ER_IRQHandler
-                0x08001968                EXTI18_OTG_FS_WKUP_IRQHandler
-                0x08001968                EXTI0_IRQHandler
-                0x08001968                I2C2_EV_IRQHandler
-                0x08001968                FPU_IRQHandler
-                0x08001968                UsageFault_Handler
-                0x08001968                SPI1_IRQHandler
-                0x08001968                TIM1_BRK_TIM9_IRQHandler
-                0x08001968                USART6_IRQHandler
-                0x08001968                TIM4_IRQHandler
-                0x08001968                I2C1_EV_IRQHandler
-                0x08001968                TIM3_IRQHandler
-                0x08001968                RCC_IRQHandler
-                0x08001968                Default_Handler
-                0x08001968                EXTI15_10_IRQHandler
-                0x08001968                ADC_IRQHandler
-                0x08001968                TIM5_IRQHandler
-                0x08001968                I2C3_EV_IRQHandler
-                0x08001968                EXTI9_5_IRQHandler
-                0x08001968                SPI2_IRQHandler
-                0x08001968                MemManage_Handler
-                0x08001968                SVC_Handler
-                0x08001968                EXTI4_IRQHandler
-                0x08001968                EXTI22_RTC_WKUP_IRQHandler
-                0x08001968                TIM2_IRQHandler
-                0x08001968                EXTI16_PVD_IRQHandler
-                0x08001968                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08001968                EXTI1_IRQHandler
-                0x08001968                EXTI17_RTC_Alarm_IRQHandler
-                0x08001968                I2C2_ER_IRQHandler
-                0x08001968                FLASH_IRQHandler
-                0x08001968                BusFault_Handler
-                0x08001968                USART1_IRQHandler
-                0x08001968                OTG_FS_IRQHandler
-                0x08001968                SPI3_IRQHandler
-                0x08001968                I2C1_ER_IRQHandler
- *fill*         0x0800196a        0x2 
+                0x080019c0        0x2 ./Startup/startup_stm32f401retx.o
+                0x080019c0                EXTI2_IRQHandler
+                0x080019c0                DebugMon_Handler
+                0x080019c0                SPI4_IRQHandler
+                0x080019c0                TIM1_CC_IRQHandler
+                0x080019c0                HardFault_Handler
+                0x080019c0                SDIO_IRQHandler
+                0x080019c0                TAMP_STAMP_IRQHandler
+                0x080019c0                PendSV_Handler
+                0x080019c0                NMI_Handler
+                0x080019c0                EXTI3_IRQHandler
+                0x080019c0                TIM1_UP_TIM10_IRQHandler
+                0x080019c0                I2C3_ER_IRQHandler
+                0x080019c0                EXTI18_OTG_FS_WKUP_IRQHandler
+                0x080019c0                EXTI0_IRQHandler
+                0x080019c0                I2C2_EV_IRQHandler
+                0x080019c0                FPU_IRQHandler
+                0x080019c0                UsageFault_Handler
+                0x080019c0                SPI1_IRQHandler
+                0x080019c0                TIM1_BRK_TIM9_IRQHandler
+                0x080019c0                USART6_IRQHandler
+                0x080019c0                TIM4_IRQHandler
+                0x080019c0                I2C1_EV_IRQHandler
+                0x080019c0                TIM3_IRQHandler
+                0x080019c0                RCC_IRQHandler
+                0x080019c0                Default_Handler
+                0x080019c0                EXTI15_10_IRQHandler
+                0x080019c0                ADC_IRQHandler
+                0x080019c0                TIM5_IRQHandler
+                0x080019c0                I2C3_EV_IRQHandler
+                0x080019c0                EXTI9_5_IRQHandler
+                0x080019c0                SPI2_IRQHandler
+                0x080019c0                MemManage_Handler
+                0x080019c0                SVC_Handler
+                0x080019c0                EXTI4_IRQHandler
+                0x080019c0                EXTI22_RTC_WKUP_IRQHandler
+                0x080019c0                TIM2_IRQHandler
+                0x080019c0                EXTI16_PVD_IRQHandler
+                0x080019c0                TIM1_TRG_COM_TIM11_IRQHandler
+                0x080019c0                EXTI1_IRQHandler
+                0x080019c0                EXTI17_RTC_Alarm_IRQHandler
+                0x080019c0                I2C2_ER_IRQHandler
+                0x080019c0                FLASH_IRQHandler
+                0x080019c0                BusFault_Handler
+                0x080019c0                USART1_IRQHandler
+                0x080019c0                OTG_FS_IRQHandler
+                0x080019c0                SPI3_IRQHandler
+                0x080019c0                I2C1_ER_IRQHandler
+ *fill*         0x080019c2        0x2 
  .text.KalmanFilterInit
-                0x0800196c       0x3c ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
-                0x0800196c                KalmanFilterInit
+                0x080019c4       0x3c ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
+                0x080019c4                KalmanFilterInit
  .text.KalmanFilter_updateEstimate
-                0x080019a8      0x120 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
-                0x080019a8                KalmanFilter_updateEstimate
+                0x08001a00      0x120 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
+                0x08001a00                KalmanFilter_updateEstimate
  .text.GPIO_Init
-                0x08001ac8      0x11e ./driver/share/Src/stm32f401re_gpio.o
-                0x08001ac8                GPIO_Init
+                0x08001b20      0x11e ./driver/share/Src/stm32f401re_gpio.o
+                0x08001b20                GPIO_Init
  .text.GPIO_WriteBit
-                0x08001be6       0x30 ./driver/share/Src/stm32f401re_gpio.o
-                0x08001be6                GPIO_WriteBit
+                0x08001c3e       0x30 ./driver/share/Src/stm32f401re_gpio.o
+                0x08001c3e                GPIO_WriteBit
  .text.GPIO_PinAFConfig
-                0x08001c16       0x92 ./driver/share/Src/stm32f401re_gpio.o
-                0x08001c16                GPIO_PinAFConfig
+                0x08001c6e       0x92 ./driver/share/Src/stm32f401re_gpio.o
+                0x08001c6e                GPIO_PinAFConfig
  .text.RCC_GetClocksFreq
-                0x08001ca8      0x15c ./driver/share/Src/stm32f401re_rcc.o
-                0x08001ca8                RCC_GetClocksFreq
+                0x08001d00      0x15c ./driver/share/Src/stm32f401re_rcc.o
+                0x08001d00                RCC_GetClocksFreq
  .text.RCC_AHB1PeriphClockCmd
-                0x08001e04       0x40 ./driver/share/Src/stm32f401re_rcc.o
-                0x08001e04                RCC_AHB1PeriphClockCmd
+                0x08001e5c       0x40 ./driver/share/Src/stm32f401re_rcc.o
+                0x08001e5c                RCC_AHB1PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x08001e44       0x40 ./driver/share/Src/stm32f401re_rcc.o
-                0x08001e44                RCC_APB1PeriphClockCmd
+                0x08001e9c       0x40 ./driver/share/Src/stm32f401re_rcc.o
+                0x08001e9c                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphClockCmd
-                0x08001e84       0x40 ./driver/share/Src/stm32f401re_rcc.o
-                0x08001e84                RCC_APB2PeriphClockCmd
+                0x08001edc       0x40 ./driver/share/Src/stm32f401re_rcc.o
+                0x08001edc                RCC_APB2PeriphClockCmd
  .text.RCC_APB2PeriphResetCmd
-                0x08001ec4       0x40 ./driver/share/Src/stm32f401re_rcc.o
-                0x08001ec4                RCC_APB2PeriphResetCmd
+                0x08001f1c       0x40 ./driver/share/Src/stm32f401re_rcc.o
+                0x08001f1c                RCC_APB2PeriphResetCmd
  .text.SystemInit
-                0x08001f04       0x6c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
-                0x08001f04                SystemInit
+                0x08001f5c       0x6c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+                0x08001f5c                SystemInit
  .text.SystemCoreClockUpdate
-                0x08001f70       0xf8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
-                0x08001f70                SystemCoreClockUpdate
+                0x08001fc8       0xf8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+                0x08001fc8                SystemCoreClockUpdate
  .text.SetSysClock
-                0x08002068       0xa0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+                0x080020c0       0xa0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
  .text.ADC_DeInit
-                0x08002108       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x08002108                ADC_DeInit
+                0x08002160       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002160                ADC_DeInit
  .text.ADC_Init
-                0x08002124       0xac D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x08002124                ADC_Init
+                0x0800217c       0xac D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x0800217c                ADC_Init
  .text.ADC_CommonInit
-                0x080021d0       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x080021d0                ADC_CommonInit
- .text.ADC_Cmd  0x08002220       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x08002220                ADC_Cmd
+                0x08002228       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002228                ADC_CommonInit
+ .text.ADC_Cmd  0x08002278       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002278                ADC_Cmd
  .text.ADC_RegularChannelConfig
-                0x08002258      0x194 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x08002258                ADC_RegularChannelConfig
+                0x080022b0      0x194 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x080022b0                ADC_RegularChannelConfig
  .text.ADC_SoftwareStartConv
-                0x080023ec       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x080023ec                ADC_SoftwareStartConv
+                0x08002444       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002444                ADC_SoftwareStartConv
  .text.ADC_EOCOnEachRegularChannelCmd
-                0x0800240c       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x0800240c                ADC_EOCOnEachRegularChannelCmd
+                0x08002464       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002464                ADC_EOCOnEachRegularChannelCmd
  .text.ADC_ContinuousModeCmd
-                0x08002444       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x08002444                ADC_ContinuousModeCmd
+                0x0800249c       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x0800249c                ADC_ContinuousModeCmd
  .text.ADC_DiscModeChannelCountConfig
-                0x0800247c       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x0800247c                ADC_DiscModeChannelCountConfig
+                0x080024d4       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x080024d4                ADC_DiscModeChannelCountConfig
  .text.ADC_DiscModeCmd
-                0x080024c0       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x080024c0                ADC_DiscModeCmd
+                0x08002518       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002518                ADC_DiscModeCmd
  .text.ADC_GetConversionValue
-                0x080024f8       0x1a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x080024f8                ADC_GetConversionValue
+                0x08002550       0x1a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x08002550                ADC_GetConversionValue
  .text.ADC_GetFlagStatus
-                0x08002512       0x34 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
-                0x08002512                ADC_GetFlagStatus
- *fill*         0x08002546        0x2 
+                0x0800256a       0x34 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+                0x0800256a                ADC_GetFlagStatus
+ *fill*         0x0800259e        0x2 
  .text.I2C_Init
-                0x08002548      0x184 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x08002548                I2C_Init
- .text.I2C_Cmd  0x080026cc       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x080026cc                I2C_Cmd
+                0x080025a0      0x184 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x080025a0                I2C_Init
+ .text.I2C_Cmd  0x08002724       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x08002724                I2C_Cmd
  .text.I2C_GenerateSTART
-                0x0800270c       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x0800270c                I2C_GenerateSTART
+                0x08002764       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x08002764                I2C_GenerateSTART
  .text.I2C_GenerateSTOP
-                0x0800274c       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x0800274c                I2C_GenerateSTOP
+                0x080027a4       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x080027a4                I2C_GenerateSTOP
  .text.I2C_Send7bitAddress
-                0x0800278c       0x3c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x0800278c                I2C_Send7bitAddress
+                0x080027e4       0x3c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x080027e4                I2C_Send7bitAddress
  .text.I2C_AcknowledgeConfig
-                0x080027c8       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x080027c8                I2C_AcknowledgeConfig
+                0x08002820       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x08002820                I2C_AcknowledgeConfig
  .text.I2C_SendData
-                0x08002808       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x08002808                I2C_SendData
+                0x08002860       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x08002860                I2C_SendData
  .text.I2C_ReceiveData
-                0x08002828       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x08002828                I2C_ReceiveData
+                0x08002880       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x08002880                I2C_ReceiveData
  .text.I2C_CheckEvent
-                0x08002844       0x60 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x08002844                I2C_CheckEvent
+                0x0800289c       0x60 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x0800289c                I2C_CheckEvent
  .text.I2C_GetFlagStatus
-                0x080028a4       0x66 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
-                0x080028a4                I2C_GetFlagStatus
- *fill*         0x0800290a        0x2 
+                0x080028fc       0x66 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+                0x080028fc                I2C_GetFlagStatus
+ *fill*         0x08002962        0x2 
  .text.TIM_TimeBaseInit
-                0x0800290c       0xd8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
-                0x0800290c                TIM_TimeBaseInit
- .text.TIM_Cmd  0x080029e4       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
-                0x080029e4                TIM_Cmd
+                0x08002964       0xd8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+                0x08002964                TIM_TimeBaseInit
+ .text.TIM_Cmd  0x08002a3c       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+                0x08002a3c                TIM_Cmd
  .text.TIM_OC4Init
-                0x08002a24       0xd0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
-                0x08002a24                TIM_OC4Init
+                0x08002a7c       0xd0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+                0x08002a7c                TIM_OC4Init
  .text.TIM_SetCompare4
-                0x08002af4       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
-                0x08002af4                TIM_SetCompare4
+                0x08002b4c       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+                0x08002b4c                TIM_SetCompare4
  .text.TIM_CtrlPWMOutputs
-                0x08002b10       0x4c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
-                0x08002b10                TIM_CtrlPWMOutputs
+                0x08002b68       0x4c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+                0x08002b68                TIM_CtrlPWMOutputs
  .text.NVIC_SetPriority
-                0x08002b5c       0x54 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002bb4       0x54 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
  .text.SysTick_Config
-                0x08002bb0       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002c08       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
  .text.TimerInit
-                0x08002bf4       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
-                0x08002bf4                TimerInit
+                0x08002c4c       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002c4c                TimerInit
  .text.TimerStart
-                0x08002c38       0xc4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
-                0x08002c38                TimerStart
+                0x08002c90       0xc4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002c90                TimerStart
  .text.TimerStop
-                0x08002cfc       0xa0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
-                0x08002cfc                TimerStop
+                0x08002d54       0xa0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002d54                TimerStop
  .text.GetMilSecTick
-                0x08002d9c       0x18 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
-                0x08002d9c                GetMilSecTick
+                0x08002df4       0x18 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002df4                GetMilSecTick
  .text.processTimerScheduler
-                0x08002db4       0xf0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
-                0x08002db4                processTimerScheduler
+                0x08002e0c       0xf0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002e0c                processTimerScheduler
  .text.TimeExpired
-                0x08002ea4       0xcc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002efc       0xcc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
  .text.SysTick_Handler
-                0x08002f70       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
-                0x08002f70                SysTick_Handler
+                0x08002fc8       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+                0x08002fc8                SysTick_Handler
  .text.TemHumSensor_Init
-                0x08002f8c        0xc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
-                0x08002f8c                TemHumSensor_Init
+                0x08002fe4        0xc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
+                0x08002fe4                TemHumSensor_Init
  .text.i2c_config
-                0x08002f98       0x94 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
-                0x08002f98                i2c_config
+                0x08002ff0       0x94 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
+                0x08002ff0                i2c_config
  .text.USART2_IRQHandler
-                0x0800302c       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
-                0x0800302c                USART2_IRQHandler
+                0x08003084       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
+                0x08003084                USART2_IRQHandler
  .text.delayMicroseconds
-                0x0800307c       0x14 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+                0x080030d4       0x14 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
  .text.ucg_gpio_init
-                0x08003090       0x60 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+                0x080030e8       0x60 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
  .text.ucg_com_arduino_send_generic_SW_SPI
-                0x080030f0       0x74 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+                0x08003148       0x74 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
  .text.ucg_com_arduino_generic_SW_SPI
-                0x08003164      0x1ec D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+                0x080031bc      0x1ec D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
  .text.Ucglib4WireSWSPI_begin
-                0x08003350       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
-                0x08003350                Ucglib4WireSWSPI_begin
+                0x080033a8       0x38 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+                0x080033a8                Ucglib4WireSWSPI_begin
  .text.ucg_DrawBox
-                0x08003388       0x56 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
-                0x08003388                ucg_DrawBox
+                0x080033e0       0x56 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
+                0x080033e0                ucg_DrawBox
  .text.ucg_ClearScreen
-                0x080033de       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
-                0x080033de                ucg_ClearScreen
+                0x08003436       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
+                0x08003436                ucg_ClearScreen
  .text.ucg_ccs_init
-                0x0800342e       0xc0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
-                0x0800342e                ucg_ccs_init
+                0x08003486       0xc0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+                0x08003486                ucg_ccs_init
  .text.ucg_ccs_step
-                0x080034ee       0x80 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
-                0x080034ee                ucg_ccs_step
+                0x08003546       0x80 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+                0x08003546                ucg_ccs_step
  .text.ucg_ccs_seek
-                0x0800356e       0xca D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
-                0x0800356e                ucg_ccs_seek
+                0x080035c6       0xca D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+                0x080035c6                ucg_ccs_seek
  .text.ucg_dev_default_cb
-                0x08003638       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
-                0x08003638                ucg_dev_default_cb
+                0x08003690       0x44 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
+                0x08003690                ucg_dev_default_cb
  .text.ucg_ext_none
-                0x0800367c       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
-                0x0800367c                ucg_ext_none
+                0x080036d4       0x1c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
+                0x080036d4                ucg_ext_none
  .text.ucg_handle_st7735_l90fx
-                0x08003698       0xd8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x08003698                ucg_handle_st7735_l90fx
+                0x080036f0       0xd8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x080036f0                ucg_handle_st7735_l90fx
  .text.ucg_handle_st7735_l90se
-                0x08003770      0x154 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x08003770                ucg_handle_st7735_l90se
+                0x080037c8      0x154 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x080037c8                ucg_handle_st7735_l90se
  .text.ucg_dev_ic_st7735_18
-                0x080038c4       0xf8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x080038c4                ucg_dev_ic_st7735_18
+                0x0800391c       0xf8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0800391c                ucg_dev_ic_st7735_18
  .text.ucg_ext_st7735_18
-                0x080039bc       0x28 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x080039bc                ucg_ext_st7735_18
+                0x08003a14       0x28 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x08003a14                ucg_ext_st7735_18
  .text.ucg_PowerDown
-                0x080039e4       0x34 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
-                0x080039e4                ucg_PowerDown
+                0x08003a3c       0x34 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+                0x08003a3c                ucg_PowerDown
  .text.ucg_PowerUp
-                0x08003a18       0x3c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
-                0x08003a18                ucg_PowerUp
+                0x08003a70       0x3c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+                0x08003a70                ucg_PowerUp
  .text.ucg_SetClipBox
-                0x08003a54       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
-                0x08003a54                ucg_SetClipBox
+                0x08003aac       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+                0x08003aac                ucg_SetClipBox
  .text.ucg_SetMaxClipRange
-                0x08003a72       0x30 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
-                0x08003a72                ucg_SetMaxClipRange
+                0x08003aca       0x30 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+                0x08003aca                ucg_SetMaxClipRange
  .text.ucg_GetDimension
-                0x08003aa2       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
-                0x08003aa2                ucg_GetDimension
+                0x08003afa       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+                0x08003afa                ucg_GetDimension
  .text.ucg_DrawL90FXWithArg
-                0x08003ac6       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
-                0x08003ac6                ucg_DrawL90FXWithArg
+                0x08003b1e       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+                0x08003b1e                ucg_DrawL90FXWithArg
  .text.ucg_dev_st7735_18x128x128
-                0x08003ae4       0x80 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
-                0x08003ae4                ucg_dev_st7735_18x128x128
+                0x08003b3c       0x80 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+                0x08003b3c                ucg_dev_st7735_18x128x128
  .text.ucg_font_get_byte
-                0x08003b64       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003bbc       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
  .text.ucg_font_get_word
-                0x08003b88       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003be0       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
  .text.ucg_read_font_info
-                0x08003bc8      0x142 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08003bc8                ucg_read_font_info
+                0x08003c20      0x142 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003c20                ucg_read_font_info
  .text.ucg_font_decode_get_unsigned_bits
-                0x08003d0a       0x96 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08003d0a                ucg_font_decode_get_unsigned_bits
+                0x08003d62       0x96 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003d62                ucg_font_decode_get_unsigned_bits
  .text.ucg_font_decode_get_signed_bits
-                0x08003da0       0x46 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08003da0                ucg_font_decode_get_signed_bits
+                0x08003df8       0x46 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003df8                ucg_font_decode_get_signed_bits
  .text.ucg_add_vector_y
-                0x08003de6       0x7a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003e3e       0x7a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
  .text.ucg_add_vector_x
-                0x08003e60       0x7a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003eb8       0x7a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
  .text.ucg_font_decode_len
-                0x08003eda      0x118 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08003eda                ucg_font_decode_len
+                0x08003f32      0x118 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08003f32                ucg_font_decode_len
  .text.ucg_font_setup_decode
-                0x08003ff2       0x64 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x0800404a       0x64 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
  .text.ucg_font_decode_glyph
-                0x08004056      0x14c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08004056                ucg_font_decode_glyph
+                0x080040ae      0x14c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x080040ae                ucg_font_decode_glyph
  .text.ucg_font_get_glyph_data
-                0x080041a2       0x7a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x080041a2                ucg_font_get_glyph_data
+                0x080041fa       0x7a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x080041fa                ucg_font_get_glyph_data
  .text.ucg_font_draw_glyph
-                0x0800421c       0x62 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x0800421c                ucg_font_draw_glyph
+                0x08004274       0x62 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08004274                ucg_font_draw_glyph
  .text.ucg_SetFontMode
-                0x0800427e       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x0800427e                ucg_SetFontMode
- *fill*         0x0800429e        0x2 
+                0x080042d6       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x080042d6                ucg_SetFontMode
+ *fill*         0x080042f6        0x2 
  .text.ucg_DrawGlyph
-                0x080042a0       0xb0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x080042a0                ucg_DrawGlyph
+                0x080042f8       0xb0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x080042f8                ucg_DrawGlyph
  .text.task_drawString
-                0x08004350      0x138 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08004350                task_drawString
+                0x080043a8      0x138 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x080043a8                task_drawString
  .text.ucg_DrawString
-                0x08004488       0x78 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08004488                ucg_DrawString
+                0x080044e0       0x78 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x080044e0                ucg_DrawString
  .text.ucg_UpdateRefHeight
-                0x08004500       0xd8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08004500                ucg_UpdateRefHeight
+                0x08004558       0xd8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08004558                ucg_UpdateRefHeight
  .text.ucg_font_calc_vref_font
-                0x080045d8       0x16 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x080045d8                ucg_font_calc_vref_font
- *fill*         0x080045ee        0x2 
+                0x08004630       0x16 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08004630                ucg_font_calc_vref_font
+ *fill*         0x08004646        0x2 
  .text.ucg_SetFontPosBaseline
-                0x080045f0       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x080045f0                ucg_SetFontPosBaseline
+                0x08004648       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08004648                ucg_SetFontPosBaseline
  .text.ucg_SetFont
-                0x08004610       0x4c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
-                0x08004610                ucg_SetFont
+                0x08004668       0x4c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+                0x08004668                ucg_SetFont
  .text.ucg_init_struct
-                0x0800465c       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
-                0x0800465c                ucg_init_struct
+                0x080046b4       0x50 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
+                0x080046b4                ucg_init_struct
  .text.ucg_Init
-                0x080046ac       0x5c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
-                0x080046ac                ucg_Init
+                0x08004704       0x5c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
+                0x08004704                ucg_Init
  .text.ucg_Draw90Line
-                0x08004708       0x88 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
-                0x08004708                ucg_Draw90Line
+                0x08004760       0x88 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
+                0x08004760                ucg_Draw90Line
  .text.ucg_DrawHLine
-                0x08004790       0x3e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
-                0x08004790                ucg_DrawHLine
+                0x080047e8       0x3e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
+                0x080047e8                ucg_DrawHLine
  .text.ucg_SetColor
-                0x080047ce       0x5c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
-                0x080047ce                ucg_SetColor
+                0x08004826       0x5c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
+                0x08004826                ucg_SetColor
  .text.ucg_UndoRotate
-                0x0800482a       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
-                0x0800482a                ucg_UndoRotate
+                0x08004882       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+                0x08004882                ucg_UndoRotate
  .text.ucg_rotate_180_xy
-                0x0800485c       0x66 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
- *fill*         0x080048c2        0x2 
+                0x080048b4       0x66 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+ *fill*         0x0800491a        0x2 
  .text.ucg_dev_rotate180
-                0x080048c4      0x100 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
-                0x080048c4                ucg_dev_rotate180
+                0x0800491c      0x100 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+                0x0800491c                ucg_dev_rotate180
  .text.ucg_SetRotate180
-                0x080049c4       0x34 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
-                0x080049c4                ucg_SetRotate180
- .text.bufInit  0x080049f8       0x36 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x080049f8                bufInit
+                0x08004a1c       0x34 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+                0x08004a1c                ucg_SetRotate180
+ .text.bufInit  0x08004a50       0x36 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004a50                bufInit
  .text.bufNumItems
-                0x08004a2e       0x18 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x08004a2e                bufNumItems
+                0x08004a86       0x18 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004a86                bufNumItems
  .text.bufIsFull
-                0x08004a46       0x26 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x08004a46                bufIsFull
+                0x08004a9e       0x26 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004a9e                bufIsFull
  .text.bufIsEmpty
-                0x08004a6c       0x26 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x08004a6c                bufIsEmpty
+                0x08004ac4       0x26 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004ac4                bufIsEmpty
  .text.bufFlush
-                0x08004a92       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x08004a92                bufFlush
+                0x08004aea       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004aea                bufFlush
  .text.bufEnDat
-                0x08004ac4       0x9c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x08004ac4                bufEnDat
+                0x08004b1c       0x9c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004b1c                bufEnDat
  .text.bufDeDat
-                0x08004b60       0x84 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
-                0x08004b60                bufDeDat
- .text.memsetl  0x08004be4       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
-                0x08004be4                memsetl
+                0x08004bb8       0x84 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+                0x08004bb8                bufDeDat
+ .text.memsetl  0x08004c3c       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
+                0x08004c3c                memsetl
  .text.USART_ReceiveData
-                0x08004c16       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
-                0x08004c16                USART_ReceiveData
+                0x08004c6e       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+                0x08004c6e                USART_ReceiveData
  .text.USART_GetITStatus
-                0x08004c36       0xb6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
-                0x08004c36                USART_GetITStatus
+                0x08004c8e       0xb6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+                0x08004c8e                USART_GetITStatus
  .text.USART_ClearITPendingBit
-                0x08004cec       0x3a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
-                0x08004cec                USART_ClearITPendingBit
+                0x08004d44       0x3a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+                0x08004d44                USART_ClearITPendingBit
  .text.ucg_clip_is_x_visible
-                0x08004d26       0x4a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+                0x08004d7e       0x4a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
  .text.ucg_clip_is_y_visible
-                0x08004d70       0x4a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+                0x08004dc8       0x4a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
  .text.ucg_clip_intersection
-                0x08004dba       0x74 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+                0x08004e12       0x74 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
  .text.ucg_clip_is_pixel_visible
-                0x08004e2e       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
-                0x08004e2e                ucg_clip_is_pixel_visible
+                0x08004e86       0x32 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+                0x08004e86                ucg_clip_is_pixel_visible
  .text.ucg_clip_l90fx
-                0x08004e60      0x300 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
-                0x08004e60                ucg_clip_l90fx
+                0x08004eb8      0x300 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+                0x08004eb8                ucg_clip_l90fx
  .text.ucg_clip_l90se
-                0x08005160       0x54 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
-                0x08005160                ucg_clip_l90se
+                0x080051b8       0x54 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+                0x080051b8                ucg_clip_l90se
  .text.ucg_com_PowerDown
-                0x080051b4       0x3e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x080051b4                ucg_com_PowerDown
+                0x0800520c       0x3e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x0800520c                ucg_com_PowerDown
  .text.ucg_com_PowerUp
-                0x080051f2       0x60 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x080051f2                ucg_com_PowerUp
+                0x0800524a       0x60 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x0800524a                ucg_com_PowerUp
  .text.ucg_com_SetLineStatus
-                0x08005252       0xe2 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x08005252                ucg_com_SetLineStatus
+                0x080052aa       0xe2 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x080052aa                ucg_com_SetLineStatus
  .text.ucg_com_SetResetLineStatus
-                0x08005334       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x08005334                ucg_com_SetResetLineStatus
+                0x0800538c       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x0800538c                ucg_com_SetResetLineStatus
  .text.ucg_com_SetCSLineStatus
-                0x08005354       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x08005354                ucg_com_SetCSLineStatus
+                0x080053ac       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x080053ac                ucg_com_SetCSLineStatus
  .text.ucg_com_SetCDLineStatus
-                0x08005374       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x08005374                ucg_com_SetCDLineStatus
+                0x080053cc       0x20 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x080053cc                ucg_com_SetCDLineStatus
  .text.ucg_com_DelayMicroseconds
-                0x08005394       0x22 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x08005394                ucg_com_DelayMicroseconds
+                0x080053ec       0x22 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x080053ec                ucg_com_DelayMicroseconds
  .text.ucg_com_DelayMilliseconds
-                0x080053b6       0x2c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x080053b6                ucg_com_DelayMilliseconds
+                0x0800540e       0x2c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x0800540e                ucg_com_DelayMilliseconds
  .text.ucg_com_SendByte
-                0x080053e2       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x080053e2                ucg_com_SendByte
+                0x0800543a       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x0800543a                ucg_com_SendByte
  .text.ucg_com_SendStringP
-                0x08005406       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x08005406                ucg_com_SendStringP
+                0x0800545e       0x40 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x0800545e                ucg_com_SendStringP
  .text.ucg_com_SendCmdArg
-                0x08005446       0x74 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
- *fill*         0x080054ba        0x2 
+                0x0800549e       0x74 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+ *fill*         0x08005512        0x2 
  .text.ucg_com_SendCmdSeq
-                0x080054bc      0x278 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
-                0x080054bc                ucg_com_SendCmdSeq
- .text.sprintf  0x08005734       0x40 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sprintf.o)
-                0x08005734                siprintf
-                0x08005734                sprintf
- .text.memset   0x08005774       0x10 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
-                0x08005774                memset
- .text.__errno  0x08005784        0xc C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
-                0x08005784                __errno
+                0x08005514      0x278 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+                0x08005514                ucg_com_SendCmdSeq
+ .text.sprintf  0x0800578c       0x40 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sprintf.o)
+                0x0800578c                siprintf
+                0x0800578c                sprintf
+ .text.memset   0x080057cc       0x10 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                0x080057cc                memset
+ .text.__errno  0x080057dc        0xc C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x080057dc                __errno
  .text.__libc_init_array
-                0x08005790       0x48 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
-                0x08005790                __libc_init_array
+                0x080057e8       0x48 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x080057e8                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x080057d8        0x2 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x080057d8                __retarget_lock_acquire_recursive
+                0x08005830        0x2 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x08005830                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080057da        0x2 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x080057da                __retarget_lock_release_recursive
- .text._free_r  0x080057dc       0x94 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
-                0x080057dc                _free_r
+                0x08005832        0x2 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x08005832                __retarget_lock_release_recursive
+ .text._free_r  0x08005834       0x94 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                0x08005834                _free_r
  .text.sbrk_aligned
-                0x08005870       0x44 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x080058c8       0x44 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x080058b4      0x100 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
-                0x080058b4                _malloc_r
+                0x0800590c      0x100 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x0800590c                _malloc_r
  .text.__malloc_lock
-                0x080059b4        0xc C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x080059b4                __malloc_lock
+                0x08005a0c        0xc C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x08005a0c                __malloc_lock
  .text.__malloc_unlock
-                0x080059c0        0xc C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x080059c0                __malloc_unlock
+                0x08005a18        0xc C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x08005a18                __malloc_unlock
  .text.__ssputs_r
-                0x080059cc       0xb6 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x080059cc                __ssputs_r
- *fill*         0x08005a82        0x2 
+                0x08005a24       0xb6 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x08005a24                __ssputs_r
+ *fill*         0x08005ada        0x2 
  .text._svfprintf_r
-                0x08005a84      0x1f8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x08005a84                _svfiprintf_r
-                0x08005a84                _svfprintf_r
+                0x08005adc      0x1f8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x08005adc                _svfiprintf_r
+                0x08005adc                _svfprintf_r
  .text._printf_common
-                0x08005c7c       0xda C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08005c7c                _printf_common
- *fill*         0x08005d56        0x2 
+                0x08005cd4       0xda C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08005cd4                _printf_common
+ *fill*         0x08005dae        0x2 
  .text._printf_i
-                0x08005d58      0x240 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x08005d58                _printf_i
- .text.memmove  0x08005f98       0x34 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
-                0x08005f98                memmove
- .text._sbrk_r  0x08005fcc       0x20 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
-                0x08005fcc                _sbrk_r
- .text.memcpy   0x08005fec       0x1c C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x08005fec                memcpy
+                0x08005db0      0x240 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08005db0                _printf_i
+ .text.memmove  0x08005ff0       0x34 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+                0x08005ff0                memmove
+ .text._sbrk_r  0x08006024       0x20 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                0x08006024                _sbrk_r
+ .text.memcpy   0x08006044       0x1c C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x08006044                memcpy
  .text._realloc_r
-                0x08006008       0x5c C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
-                0x08006008                _realloc_r
+                0x08006060       0x5c C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                0x08006060                _realloc_r
  .text._malloc_usable_size_r
-                0x08006064       0x10 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
-                0x08006064                _malloc_usable_size_r
+                0x080060bc       0x10 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+                0x080060bc                _malloc_usable_size_r
  *(.glue_7)
- .glue_7        0x08006074        0x0 linker stubs
+ .glue_7        0x080060cc        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08006074        0x0 linker stubs
+ .glue_7t       0x080060cc        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08006074        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x080060cc        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08006074        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08006074                _init
- .init          0x08006078        0x8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x080060cc        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080060cc                _init
+ .init          0x080060d0        0x8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08006080        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08006080                _fini
- .fini          0x08006084        0x8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0800608c                        . = ALIGN (0x4)
-                0x0800608c                        _etext = .
+ .fini          0x080060d8        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080060d8                _fini
+ .fini          0x080060dc        0x8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x080060e4                        . = ALIGN (0x4)
+                0x080060e4                        _etext = .
 
-.vfp11_veneer   0x0800608c        0x0
- .vfp11_veneer  0x0800608c        0x0 linker stubs
+.vfp11_veneer   0x080060e4        0x0
+ .vfp11_veneer  0x080060e4        0x0 linker stubs
 
-.v4_bx          0x0800608c        0x0
- .v4_bx         0x0800608c        0x0 linker stubs
+.v4_bx          0x080060e4        0x0
+ .v4_bx         0x080060e4        0x0 linker stubs
 
-.iplt           0x0800608c        0x0
- .iplt          0x0800608c        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x080060e4        0x0
+ .iplt          0x080060e4        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0800608c      0x924
-                0x0800608c                        . = ALIGN (0x4)
+.rodata         0x080060e4      0x924
+                0x080060e4                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0800608c       0x56 ./Src/main.o
- *fill*         0x080060e2        0x2 
- .rodata        0x080060e4        0xf D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+ .rodata        0x080060e4       0x58 ./Src/main.o
+ .rodata        0x0800613c        0xf D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
  *(.rodata*)
- *fill*         0x080060f3        0x1 
+ *fill*         0x0800614b        0x1 
  .rodata.ucg_st7735_set_pos_seq
-                0x080060f4       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x080060f4                ucg_st7735_set_pos_seq
- *fill*         0x08006112        0x2 
+                0x0800614c       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0800614c                ucg_st7735_set_pos_seq
+ *fill*         0x0800616a        0x2 
  .rodata.ucg_st7735_set_pos_dir0_seq
-                0x08006114       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x08006114                ucg_st7735_set_pos_dir0_seq
- *fill*         0x08006132        0x2 
+                0x0800616c       0x1e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0800616c                ucg_st7735_set_pos_dir0_seq
+ *fill*         0x0800618a        0x2 
  .rodata.ucg_st7735_set_pos_dir1_seq
-                0x08006134       0x21 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x08006134                ucg_st7735_set_pos_dir1_seq
- *fill*         0x08006155        0x3 
+                0x0800618c       0x21 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x0800618c                ucg_st7735_set_pos_dir1_seq
+ *fill*         0x080061ad        0x3 
  .rodata.ucg_st7735_set_pos_dir2_seq
-                0x08006158       0x21 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x08006158                ucg_st7735_set_pos_dir2_seq
- *fill*         0x08006179        0x3 
+                0x080061b0       0x21 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x080061b0                ucg_st7735_set_pos_dir2_seq
+ *fill*         0x080061d1        0x3 
  .rodata.ucg_st7735_set_pos_dir3_seq
-                0x0800617c       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
-                0x0800617c                ucg_st7735_set_pos_dir3_seq
+                0x080061d4       0x24 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+                0x080061d4                ucg_st7735_set_pos_dir3_seq
  .rodata.ucg_st7735_power_down_seq
-                0x080061a0        0x7 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
- *fill*         0x080061a7        0x1 
+                0x080061f8        0x7 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+ *fill*         0x080061ff        0x1 
  .rodata.ucg_tft_128x160_st7735_init_seq
-                0x080061a8       0x2c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+                0x08006200       0x2c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
  .rodata.ucg_font_ncenR12_hr
-                0x080061d4      0x7a8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
-                0x080061d4                ucg_font_ncenR12_hr
+                0x0800622c      0x7a8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
+                0x0800622c                ucg_font_ncenR12_hr
  .rodata._svfprintf_r.str1.1
-                0x0800697c       0x11 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x080069d4       0x11 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x0800698d       0x22 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x080069b0                        . = ALIGN (0x4)
- *fill*         0x080069af        0x1 
+                0x080069e5       0x22 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x08006a08                        . = ALIGN (0x4)
+ *fill*         0x08006a07        0x1 
 
-.ARM.extab      0x080069b0        0x0
-                0x080069b0                        . = ALIGN (0x4)
+.ARM.extab      0x08006a08        0x0
+                0x08006a08                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080069b0                        . = ALIGN (0x4)
+                0x08006a08                        . = ALIGN (0x4)
 
-.ARM            0x080069b0        0x8
-                0x080069b0                        . = ALIGN (0x4)
-                0x080069b0                        __exidx_start = .
+.ARM            0x08006a08        0x8
+                0x08006a08                        . = ALIGN (0x4)
+                0x08006a08                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x080069b0        0x8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
-                0x080069b8                        __exidx_end = .
-                0x080069b8                        . = ALIGN (0x4)
+ .ARM.exidx     0x08006a08        0x8 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+                0x08006a10                        __exidx_end = .
+                0x08006a10                        . = ALIGN (0x4)
 
-.rel.dyn        0x080069b8        0x0
- .rel.iplt      0x080069b8        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08006a10        0x0
+ .rel.iplt      0x08006a10        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x080069b8        0x0
-                0x080069b8                        . = ALIGN (0x4)
-                0x080069b8                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08006a10        0x0
+                0x08006a10                        . = ALIGN (0x4)
+                0x08006a10                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080069b8                        PROVIDE (__preinit_array_end = .)
-                0x080069b8                        . = ALIGN (0x4)
+                0x08006a10                        PROVIDE (__preinit_array_end = .)
+                0x08006a10                        . = ALIGN (0x4)
 
-.init_array     0x080069b8        0x4
-                0x080069b8                        . = ALIGN (0x4)
-                0x080069b8                        PROVIDE (__init_array_start = .)
+.init_array     0x08006a10        0x4
+                0x08006a10                        . = ALIGN (0x4)
+                0x08006a10                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080069b8        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080069bc                        PROVIDE (__init_array_end = .)
-                0x080069bc                        . = ALIGN (0x4)
+ .init_array    0x08006a10        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08006a14                        PROVIDE (__init_array_end = .)
+                0x08006a14                        . = ALIGN (0x4)
 
-.fini_array     0x080069bc        0x4
-                0x080069bc                        . = ALIGN (0x4)
+.fini_array     0x08006a14        0x4
+                0x08006a14                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080069bc        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08006a14        0x4 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x080069c0                        . = ALIGN (0x4)
-                0x080069c0                        _sidata = LOADADDR (.data)
+                0x08006a18                        . = ALIGN (0x4)
+                0x08006a18                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x78 load address 0x080069c0
+.data           0x20000000       0x78 load address 0x08006a18
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -3972,11 +3970,11 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x20000078                        . = ALIGN (0x4)
                 0x20000078                        _edata = .
 
-.igot.plt       0x20000078        0x0 load address 0x08006a38
+.igot.plt       0x20000078        0x0 load address 0x08006a90
  .igot.plt      0x20000078        0x0 C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x20000078                        . = ALIGN (0x4)
 
-.bss            0x20000078     0x1468 load address 0x08006a38
+.bss            0x20000078     0x1468 load address 0x08006a90
                 0x20000078                        _sbss = .
                 0x20000078                        __bss_start__ = _sbss
  *(.bss)
@@ -4064,7 +4062,7 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x200014e0                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200014e0      0x600 load address 0x08006a38
+                0x200014e0      0x600 load address 0x08006a90
                 0x200014e0                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x200014e0                        PROVIDE (_end = .)
@@ -4200,71 +4198,71 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x3af3f
- .debug_info    0x00000000     0x1e6f ./Src/main.o
- .debug_info    0x00001e6f      0x168 ./Src/sysmem.o
- .debug_info    0x00001fd7       0x30 ./Startup/startup_stm32f401retx.o
- .debug_info    0x00002007      0x1e1 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
- .debug_info    0x000021e8      0x590 ./driver/share/Src/stm32f401re_gpio.o
- .debug_info    0x00002778      0xce0 ./driver/share/Src/stm32f401re_rcc.o
- .debug_info    0x00003458      0x5bb D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
- .debug_info    0x00003a13      0xc5d D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
- .debug_info    0x00004670      0xb9e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
- .debug_info    0x0000520e     0x1c73 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
- .debug_info    0x00006e81      0x922 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
- .debug_info    0x000077a3      0xafd D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
- .debug_info    0x000082a0      0xb11 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
- .debug_info    0x00008db1     0x333f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
- .debug_info    0x0000c0f0     0x329d D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
- .debug_info    0x0000f38d     0x2b08 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
- .debug_info    0x00011e95     0x324b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
- .debug_info    0x000150e0     0x3272 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
- .debug_info    0x00018352     0x3178 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
- .debug_info    0x0001b4ca     0x303e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
- .debug_info    0x0001e508     0x43ab D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
- .debug_info    0x000228b3     0x3856 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
- .debug_info    0x00026109     0x3222 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
- .debug_info    0x0002932b     0x3056 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
- .debug_info    0x0002c381     0x43df D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
- .debug_info    0x00030760     0x3231 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
- .debug_info    0x00033991      0x339 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
- .debug_info    0x00033cca      0x2bd D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
- .debug_info    0x00033f87      0x9d4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
- .debug_info    0x0003495b     0x315a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
- .debug_info    0x00037ab5     0x348a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+.debug_info     0x00000000    0x3af29
+ .debug_info    0x00000000     0x1e59 ./Src/main.o
+ .debug_info    0x00001e59      0x168 ./Src/sysmem.o
+ .debug_info    0x00001fc1       0x30 ./Startup/startup_stm32f401retx.o
+ .debug_info    0x00001ff1      0x1e1 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
+ .debug_info    0x000021d2      0x590 ./driver/share/Src/stm32f401re_gpio.o
+ .debug_info    0x00002762      0xce0 ./driver/share/Src/stm32f401re_rcc.o
+ .debug_info    0x00003442      0x5bb D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+ .debug_info    0x000039fd      0xc5d D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+ .debug_info    0x0000465a      0xb9e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+ .debug_info    0x000051f8     0x1c73 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+ .debug_info    0x00006e6b      0x922 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+ .debug_info    0x0000778d      0xafd D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
+ .debug_info    0x0000828a      0xb11 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
+ .debug_info    0x00008d9b     0x333f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+ .debug_info    0x0000c0da     0x329d D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
+ .debug_info    0x0000f377     0x2b08 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+ .debug_info    0x00011e7f     0x324b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
+ .debug_info    0x000150ca     0x3272 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+ .debug_info    0x0001833c     0x3178 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+ .debug_info    0x0001b4b4     0x303e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+ .debug_info    0x0001e4f2     0x43ab D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+ .debug_info    0x0002289d     0x3856 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
+ .debug_info    0x000260f3     0x3222 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
+ .debug_info    0x00029315     0x3056 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
+ .debug_info    0x0002c36b     0x43df D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
+ .debug_info    0x0003074a     0x3231 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+ .debug_info    0x0003397b      0x339 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+ .debug_info    0x00033cb4      0x2bd D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
+ .debug_info    0x00033f71      0x9d4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+ .debug_info    0x00034945     0x315a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+ .debug_info    0x00037a9f     0x348a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
 
-.debug_abbrev   0x00000000     0x328a
- .debug_abbrev  0x00000000      0x407 ./Src/main.o
- .debug_abbrev  0x00000407       0xbc ./Src/sysmem.o
- .debug_abbrev  0x000004c3       0x24 ./Startup/startup_stm32f401retx.o
- .debug_abbrev  0x000004e7       0xe4 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
- .debug_abbrev  0x000005cb      0x1af ./driver/share/Src/stm32f401re_gpio.o
- .debug_abbrev  0x0000077a      0x20d ./driver/share/Src/stm32f401re_rcc.o
- .debug_abbrev  0x00000987      0x138 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
- .debug_abbrev  0x00000abf      0x194 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
- .debug_abbrev  0x00000c53      0x196 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
- .debug_abbrev  0x00000de9      0x19f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
- .debug_abbrev  0x00000f88      0x29a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
- .debug_abbrev  0x00001222      0x24a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
- .debug_abbrev  0x0000146c      0x2ba D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
- .debug_abbrev  0x00001726      0x202 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
- .debug_abbrev  0x00001928      0x18b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
- .debug_abbrev  0x00001ab3       0xf5 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
- .debug_abbrev  0x00001ba8      0x19e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
- .debug_abbrev  0x00001d46      0x1dc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
- .debug_abbrev  0x00001f22      0x191 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
- .debug_abbrev  0x000020b3      0x14e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
- .debug_abbrev  0x00002201      0x2fc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
- .debug_abbrev  0x000024fd      0x1c6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
- .debug_abbrev  0x000026c3      0x175 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
- .debug_abbrev  0x00002838      0x148 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
- .debug_abbrev  0x00002980       0x83 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
- .debug_abbrev  0x00002a03      0x1a3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
- .debug_abbrev  0x00002ba6      0x12a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
- .debug_abbrev  0x00002cd0       0xce D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
- .debug_abbrev  0x00002d9e      0x187 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
- .debug_abbrev  0x00002f25      0x173 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
- .debug_abbrev  0x00003098      0x1f2 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+.debug_abbrev   0x00000000     0x3279
+ .debug_abbrev  0x00000000      0x3f6 ./Src/main.o
+ .debug_abbrev  0x000003f6       0xbc ./Src/sysmem.o
+ .debug_abbrev  0x000004b2       0x24 ./Startup/startup_stm32f401retx.o
+ .debug_abbrev  0x000004d6       0xe4 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
+ .debug_abbrev  0x000005ba      0x1af ./driver/share/Src/stm32f401re_gpio.o
+ .debug_abbrev  0x00000769      0x20d ./driver/share/Src/stm32f401re_rcc.o
+ .debug_abbrev  0x00000976      0x138 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+ .debug_abbrev  0x00000aae      0x194 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+ .debug_abbrev  0x00000c42      0x196 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+ .debug_abbrev  0x00000dd8      0x19f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+ .debug_abbrev  0x00000f77      0x29a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+ .debug_abbrev  0x00001211      0x24a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
+ .debug_abbrev  0x0000145b      0x2ba D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
+ .debug_abbrev  0x00001715      0x202 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+ .debug_abbrev  0x00001917      0x18b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
+ .debug_abbrev  0x00001aa2       0xf5 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+ .debug_abbrev  0x00001b97      0x19e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
+ .debug_abbrev  0x00001d35      0x1dc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+ .debug_abbrev  0x00001f11      0x191 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+ .debug_abbrev  0x000020a2      0x14e D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+ .debug_abbrev  0x000021f0      0x2fc D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+ .debug_abbrev  0x000024ec      0x1c6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
+ .debug_abbrev  0x000026b2      0x175 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
+ .debug_abbrev  0x00002827      0x148 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
+ .debug_abbrev  0x0000296f       0x83 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
+ .debug_abbrev  0x000029f2      0x1a3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+ .debug_abbrev  0x00002b95      0x12a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+ .debug_abbrev  0x00002cbf       0xce D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
+ .debug_abbrev  0x00002d8d      0x187 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+ .debug_abbrev  0x00002f14      0x173 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+ .debug_abbrev  0x00003087      0x1f2 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
 
 .debug_aranges  0x00000000     0x1258
  .debug_aranges
@@ -4454,101 +4452,101 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x000124fb       0x84 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
  .debug_macro   0x0001257f       0x84 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
 
-.debug_line     0x00000000     0xc887
- .debug_line    0x00000000     0x1145 ./Src/main.o
- .debug_line    0x00001145      0x57e ./Src/sysmem.o
- .debug_line    0x000016c3       0x7b ./Startup/startup_stm32f401retx.o
- .debug_line    0x0000173e      0x621 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
- .debug_line    0x00001d5f      0x797 ./driver/share/Src/stm32f401re_gpio.o
- .debug_line    0x000024f6      0xd7c ./driver/share/Src/stm32f401re_rcc.o
- .debug_line    0x00003272      0x4a0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
- .debug_line    0x00003712      0x84b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
- .debug_line    0x00003f5d      0x7f1 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
- .debug_line    0x0000474e      0xd2f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
- .debug_line    0x0000547d      0x684 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
- .debug_line    0x00005b01      0x841 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
- .debug_line    0x00006342      0x72b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
- .debug_line    0x00006a6d      0x5cd D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
- .debug_line    0x0000703a      0x4c6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
- .debug_line    0x00007500      0x420 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
- .debug_line    0x00007920      0x521 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
- .debug_line    0x00007e41      0x512 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
- .debug_line    0x00008353      0x48a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
- .debug_line    0x000087dd      0x403 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
- .debug_line    0x00008be0      0x971 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
- .debug_line    0x00009551      0x55c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
- .debug_line    0x00009aad      0x498 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
- .debug_line    0x00009f45      0x400 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
- .debug_line    0x0000a345      0x3e1 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
- .debug_line    0x0000a726      0x5d4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
- .debug_line    0x0000acfa      0x532 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
- .debug_line    0x0000b22c      0x46f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
- .debug_line    0x0000b69b      0x7a5 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
- .debug_line    0x0000be40      0x4c1 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
- .debug_line    0x0000c301      0x586 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+.debug_line     0x00000000     0xc88d
+ .debug_line    0x00000000     0x114b ./Src/main.o
+ .debug_line    0x0000114b      0x57e ./Src/sysmem.o
+ .debug_line    0x000016c9       0x7b ./Startup/startup_stm32f401retx.o
+ .debug_line    0x00001744      0x621 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
+ .debug_line    0x00001d65      0x797 ./driver/share/Src/stm32f401re_gpio.o
+ .debug_line    0x000024fc      0xd7c ./driver/share/Src/stm32f401re_rcc.o
+ .debug_line    0x00003278      0x4a0 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+ .debug_line    0x00003718      0x84b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+ .debug_line    0x00003f63      0x7f1 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+ .debug_line    0x00004754      0xd2f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+ .debug_line    0x00005483      0x684 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+ .debug_line    0x00005b07      0x841 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
+ .debug_line    0x00006348      0x72b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
+ .debug_line    0x00006a73      0x5cd D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+ .debug_line    0x00007040      0x4c6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
+ .debug_line    0x00007506      0x420 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+ .debug_line    0x00007926      0x521 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
+ .debug_line    0x00007e47      0x512 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+ .debug_line    0x00008359      0x48a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+ .debug_line    0x000087e3      0x403 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+ .debug_line    0x00008be6      0x971 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+ .debug_line    0x00009557      0x55c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
+ .debug_line    0x00009ab3      0x498 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
+ .debug_line    0x00009f4b      0x400 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
+ .debug_line    0x0000a34b      0x3e1 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
+ .debug_line    0x0000a72c      0x5d4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+ .debug_line    0x0000ad00      0x532 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+ .debug_line    0x0000b232      0x46f D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
+ .debug_line    0x0000b6a1      0x7a5 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+ .debug_line    0x0000be46      0x4c1 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+ .debug_line    0x0000c307      0x586 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
 
-.debug_str      0x00000000    0x57ca1
- .debug_str     0x00000000    0x4bd64 ./Src/main.o
-                              0x4c0ea (size before relaxing)
- .debug_str     0x0004bd64      0x4d7 ./Src/sysmem.o
+.debug_str      0x00000000    0x57c8d
+ .debug_str     0x00000000    0x4bd50 ./Src/main.o
+                              0x4c0d6 (size before relaxing)
+ .debug_str     0x0004bd50      0x4d7 ./Src/sysmem.o
                                0x60d2 (size before relaxing)
- .debug_str     0x0004c23b       0x3f ./Startup/startup_stm32f401retx.o
+ .debug_str     0x0004c227       0x3f ./Startup/startup_stm32f401retx.o
                                  0x72 (size before relaxing)
- .debug_str     0x0004c27a      0x8e8 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
+ .debug_str     0x0004c266      0x8e8 ./driver/share/Inc/driver/Kalman_filter/kalman_filter.o
                                0x6f99 (size before relaxing)
- .debug_str     0x0004cb62      0x13b ./driver/share/Src/stm32f401re_gpio.o
+ .debug_str     0x0004cb4e      0x13b ./driver/share/Src/stm32f401re_gpio.o
                               0x37022 (size before relaxing)
- .debug_str     0x0004cc9d      0xc4a ./driver/share/Src/stm32f401re_rcc.o
+ .debug_str     0x0004cc89      0xc4a ./driver/share/Src/stm32f401re_rcc.o
                               0x39b75 (size before relaxing)
- .debug_str     0x0004d8e7      0x5a3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
+ .debug_str     0x0004d8d3      0x5a3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(system_stm32f4xx.o)
                               0x3583e (size before relaxing)
- .debug_str     0x0004de8a      0x6e8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
+ .debug_str     0x0004de76      0x6e8 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_adc.o)
                               0x3c852 (size before relaxing)
- .debug_str     0x0004e572      0x32c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
+ .debug_str     0x0004e55e      0x32c D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_i2c.o)
                               0x3af28 (size before relaxing)
- .debug_str     0x0004e89e      0xa5b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
+ .debug_str     0x0004e88a      0xa5b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_tim.o)
                               0x3a911 (size before relaxing)
- .debug_str     0x0004f2f9      0x599 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
+ .debug_str     0x0004f2e5      0x599 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(timer.o)
                               0x39451 (size before relaxing)
- .debug_str     0x0004f892      0x817 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
+ .debug_str     0x0004f87e      0x817 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(temhumsensor.o)
                               0x3cc44 (size before relaxing)
- .debug_str     0x000500a9     0x1df4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
+ .debug_str     0x00050095     0x1df4 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(serial.o)
                               0x3cca1 (size before relaxing)
- .debug_str     0x00051e9d     0x42ec D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
+ .debug_str     0x00051e89     0x42ec D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(Ucglib.o)
                               0x4067c (size before relaxing)
- .debug_str     0x00056189       0x76 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
+ .debug_str     0x00056175       0x76 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_box.o)
                                0x9c13 (size before relaxing)
- .debug_str     0x000561ff       0x48 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
+ .debug_str     0x000561eb       0x48 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_ccs.o)
                                0x97ef (size before relaxing)
- .debug_str     0x00056247       0xaf D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
+ .debug_str     0x00056233       0xaf D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_default_cb.o)
                                0x9c41 (size before relaxing)
- .debug_str     0x000562f6      0x135 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
+ .debug_str     0x000562e2      0x135 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_ic_st7735.o)
                                0x9ce5 (size before relaxing)
- .debug_str     0x0005642b       0xce D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
+ .debug_str     0x00056417       0xce D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_msg_api.o)
                                0x9c5b (size before relaxing)
- .debug_str     0x000564f9       0x68 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
+ .debug_str     0x000564e5       0x68 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_dev_tft_128x128_st7735.o)
                                0x9c0a (size before relaxing)
- .debug_str     0x00056561      0xcae D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
+ .debug_str     0x0005654d      0xcae D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_font.o)
                                0xd07e (size before relaxing)
- .debug_str     0x0005720f       0x35 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
+ .debug_str     0x000571fb       0x35 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_init.o)
                                0xcb75 (size before relaxing)
- .debug_str     0x00057244       0x8d D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
+ .debug_str     0x00057230       0x8d D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_line.o)
                                0x9c1a (size before relaxing)
- .debug_str     0x000572d1       0x2b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
+ .debug_str     0x000572bd       0x2b D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel.o)
                                0x9bc5 (size before relaxing)
- .debug_str     0x000572fc       0x27 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
+ .debug_str     0x000572e8       0x27 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_pixel_font_data.o)
                                0x9785 (size before relaxing)
- .debug_str     0x00057323       0xc6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
+ .debug_str     0x0005730f       0xc6 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_rotate.o)
                                0x9fb3 (size before relaxing)
- .debug_str     0x000573e9       0x93 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
+ .debug_str     0x000573d5       0x93 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(buff.o)
                               0x35751 (size before relaxing)
- .debug_str     0x0005747c       0xb3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
+ .debug_str     0x00057468       0xb3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(utilities.o)
                                0x3d14 (size before relaxing)
- .debug_str     0x0005752f      0x4c3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
+ .debug_str     0x0005751b      0x4c3 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(stm32f401re_usart.o)
                               0x3a79e (size before relaxing)
- .debug_str     0x000579f2       0xa5 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
+ .debug_str     0x000579de       0xa5 D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_clip.o)
                                0x9c32 (size before relaxing)
- .debug_str     0x00057a97      0x20a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
+ .debug_str     0x00057a83      0x20a D:\TTCS_test\KiemTraGiuaKy_ThucTapCoSo_Nhom1\driver\libstm\libLibraries.a(ucg_com_msg_api.o)
                                0x9ddf (size before relaxing)
 
 .comment        0x00000000       0xbe
